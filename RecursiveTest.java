@@ -1,3 +1,8 @@
+//Jasmin Cervantes
+//Date: 11.08.2024
+//Recursion and JUnit Assignment
+//Purposely made one test for each method wrong to make sure it was working correctly
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -75,5 +80,55 @@ public class RecursiveTest {
     @Test
     public void test15() {
         assertEquals(Main.countHi2("xhixhi"), 2);
+    }
+
+    @Test
+    public void test16() {
+        assertEquals(Main.strCount("catcowcat", "cat"), 2);
+    }
+
+    @Test
+    public void test17() {
+        assertEquals(Main.strCount("catcowcat", "cow"), 1);
+    }
+
+    @Test
+    public void test18() {
+        assertEquals(Main.strCount("catcowcat", "dog"), 0);
+    }
+
+    @Test
+    public void test19() {
+        assertEquals(Main.strCount("batballbat", "bat"), 2);
+    }
+
+    @Test
+    public void test20() {
+        assertEquals(Main.strCount("batballbat", "bats"), 2);
+    }
+
+    @Test
+    public void test21() {
+        assertEquals(Main.stringClean("yyzzza"), "yza");
+    }
+
+    @Test
+    public void test22() {
+        assertEquals(Main.stringClean("abbbcdd"), "abcd");
+    }
+
+    @Test
+    public void test23() {
+        assertEquals(Main.stringClean("Hello"), "Helo");
+    }
+
+    @Test
+    public void test24() {
+        assertEquals(Main.stringClean("Pallet"), "Palet");
+    }
+
+    @Test
+    public void test25() {
+        assertEquals(Main.stringClean("ball"), "ball");
     }
 }
